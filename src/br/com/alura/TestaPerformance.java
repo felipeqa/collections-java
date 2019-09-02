@@ -28,6 +28,5 @@ public class TestaPerformance {
 
         System.out.println("Tempo gasto: " + tempoDeExecucao);
 
-
     }
 }
