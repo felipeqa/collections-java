@@ -26,5 +26,20 @@ public class TestaCursoComALunos {
         collectionCurso.getAlunos().forEach(aluno -> {
             System.out.println(aluno);
         });
+
+        System.out.println("O  aluno " + a1 + " esta matriculado?");
+        System.out.println(collectionCurso.estaMAtriculado(a1));
+
+        Aluno felipe = new Aluno("Felipe Oliveira",  2343);
+
+        System.out.println("Esse felipe esta matriculado?");
+        System.out.println(collectionCurso.estaMAtriculado(felipe));
+
+        System.out.println("Testar as referencias criando um Felipe Rodrigues usando equals");
+        System.out.println(a1.equals(felipe));
+
+        //Obrigatoriamente o seguinte é true
+
+        System.out.println(a1.hashCode() == felipe.hashCode());
     }
 }
